@@ -1,0 +1,27 @@
+{
+  "name": "fisx-amd",
+  "version": "0.1.0",
+  "description": "AMD module compile utilties for fisx",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/tasks/*.spec.js"
+  },
+  "keywords": [
+    "fis",
+    "fis3",
+    "fisx",
+    "amd"
+  ],
+  "author": "sparklewhy@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "escodegen": "^1.7.0",
+    "esprima": "^2.7.0",
+    "estraverse": "^4.1.1",
+    "lodash": "^3.10.1"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.3.4"
+  }
+}
