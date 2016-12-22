@@ -41,6 +41,9 @@ exports.updateResourceId = require('./lib/module-updater').updateResourceId;
  */
 exports.lookupModuleFile = function (moduleId, ownerId, moduleConf, fis) {
     var moduleInfo = exports.getResourceInfo(moduleId, ownerId, moduleConf).module;
-    return moduleInfo.fullPath && fis.project.lookup(moduleInfo.fullPath);
+    if (moduleInfo.fullPath && fis.util.isAbsolute(moduleInfo.fullPath)) {
+        return fis.project.lookup(moduleInfo.fullPath);
+    }
+    return {};
 };
 
