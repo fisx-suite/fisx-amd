@@ -1,6 +1,6 @@
 {
   "name": "fisx-amd",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "AMD module compile utilties for fisx",
   "main": "index.js",
   "scripts": {
